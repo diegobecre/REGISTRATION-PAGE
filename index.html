@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego Becerra Regalado</title>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="IMG/logocecyte.png" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+        <title>CECyTE ProyecLab </title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+
+<body>
+    <div class="navBar" id="nv">
+        <nav class="responsive-nav">
+            <i class="bi bi-justify" onclick="toggleMenu()" id="menu-icon"></i>
+            <ul id="main-menu" style="display: none;">
+                <li><a href='?page=home'>INICIO </a></li>
+                <li><a href='?page=menu'>NEWS </a></li>
+                <li><a href='?page=ourstory'>NOSOTROS </a></li>
+                <li><a href='?page=contactus'>CONTÁCTANOS </a></li>
+                <li class="socialIcon"><a href="Llama:111-111-111"><i class="bi bi-telephone-forward"></i></a></li>
+                <li class="socialIcon"><a href="instgram.com/ejemplo"><i class="bi bi-instagram"></i></a></li>
+                <li class="socialIcon"><a href="mail:ejemplo@gmail.com"><i class="bi bi-envelope-fill"></i></a></li>
+            </ul>
+            <script>
+                function toggleMenu() {
+                    var menu = document.getElementById("main-menu");
+                    menu.style.display = menu.style.display === "none" ? "block" : "none";
+                }
+            </script>
+        </nav>
+    </div>
+    <div class="header">
+        <div class="IntroMsg">
+            <img alt="CECyTE ProyecLab" class="logo" src="IMG/logocecyte.png" id="introLogo" width="200" height="200" />
+        </div>
+        <div class='IntroMsg'>
+            <h1> ¡Impulsa tu creatividad estudiantil hacia el éxito! </h1>
+            </br>
+            <span>
+                Tu plataforma de proyectos, tu camino al éxito.
+            </span>
+            <h2>
+                <a href="#formulario" style="text-decoration: none; color: white;"> <i
+                        class="bi bi-telephone-forward-fill"> <span> Registrate AQUÍ </span></i></a>
+            </h2>
+        </div>
+        <div class="menu">
+            <div class="menuIntro">
+                <img src="IMG/CONCURSO-CECYTEC-11.jpg" />
+                <img src="IMG/CONCURSO-CECYTEC-11.jpg" />
+            </div>
+            <section id="home-menu">
+                <h2>NOMBRE CONVOCATORIA</h2>
+                <h3>_____________</h3>
+                <ul>
+                    <li>
+                        Título
+                    </li>
+                    <li>
+                        Descripción
+                    </li>
+                    <li>
+                        Fecha de apertura
+                    </li>
+                    <li>
+                        Fecha de cierre
+                    </li>
+                    <li>
+                        Requisitos:
+                    </li>
+                    <li>
+
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="menu">
+            <div class="menuIntro">
+                <img id="caption_img" src="IMG/CONCURSO-CECYTEC-11.jpg" />
+                <img id="caption_img" src="IMG/CONCURSO-CECYTEC-11.jpg" />
+            </div>
+            <section id="home-menu">
+                <h2>NOMBRE CONVOCATORIA</h2>
+                <h3>_____________</h3>
+                <ul>
+                    <li>
+                        Título
+                    </li>
+                    <li>
+                        Descripción
+                    </li>
+                    <li>
+                        Fecha de apertura
+                    </li>
+                    <li>
+                        Fecha de cierre
+                    </li>
+                    <li>
+                        Requisitos:
+                    </li>
+                    <li>
+
+                    </li>
+
+                </ul>
+            </section>
+        </div>
+        <div class="menu">
+            <div class="menuIntro">
+                <img id="caption_img" src="IMG/chigna1.jpg" />
+                <img id="caption_img" src="IMG/chigna1.jpg" />
+            </div>
+            <section id="home-menu">
+                <h2>REGISTRO</h2>
+                <h3>Usuario</h3>
+                <ul>
+                    <form id="formulario" name="form" action="registro.php" method="post">
+                        Nombre: <input type="text" name="nombre" required>
+                        <p>
+                            Apellido paterno:<input type="text" name="a_paterno" required>
+                        <p>
+                            Apellido paterno:<input type="text" name="a_materno" required>
+                        <p>
+                            Mail:<input type="text" name="mail" required>
+                        <p>
+                            Celular:<input type="text" name="celular" required>
+                        <p>
+                            Convocatoria:<input type="text" name="convocatoria " required>
+                        <p>
+                            <input type="submit" value="Registrar" class="custom-button">
+                            <input type="reset" value="Borrar" class="custom-button">
+                </ul>
+            </section>
+        </div>
+</body>
